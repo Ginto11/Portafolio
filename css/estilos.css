@@ -66,6 +66,7 @@ header .contenedor-links a{
     align-items: center;
     gap: 5rem;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 #inicio .inicio-informacion{
@@ -90,6 +91,7 @@ header .contenedor-links a{
 
 #inicio .inicio-informacion p{
     color: var(--text-color-dark);
+    font-size: 1rem;
 }
 
 #inicio .inicio-botones{
@@ -159,6 +161,8 @@ header .contenedor-links a{
     color: var(--text-color);
     text-align: center;
     border-bottom: .2rem solid var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #sobre-mi .contenedor{
@@ -177,6 +181,7 @@ header .contenedor-links a{
 #sobre-mi .contenedor-perfil p{
     color: var(--text-color-dark);
     text-align: justify;
+    font-size: 1rem;
 }
 
 #sobre-mi .contenedor-habilidades{
@@ -197,6 +202,7 @@ header .contenedor-links a{
 #sobre-mi .contenedor-datos label{
     color: var(--text-color);
     font-weight: bold;
+    font-size: 1rem;
 }
 
 #sobre-mi .contenedor-perfil .btn-descargar{
@@ -268,6 +274,7 @@ header .contenedor-links a{
 .card .card-informacion p {
     color: var(--text-color-dark);
     text-align: justify;
+    font-size: 1rem;
 }
 
 .card .contenedor-tecnologias {
