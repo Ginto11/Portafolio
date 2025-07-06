@@ -1,0 +1,347 @@
+:root{
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --dark-color: #1a1a1a;
+    --light-color: #2d3436;
+    --text-color: #f5f6fa;
+    --text-light: #b2bec3;
+    --shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    --card-bg: #1e272e;
+    --nav-bg: rgba(30, 39, 46, 0.9);
+    --toggle-bg: #4b4b4b;
+    --toggle-ball: #2d3436;
+    --primary-color-rgb: 52, 152, 219;
+    --background-header: #1D262C;
+    --background-inicio: #151F25;
+    --text-color-dark: #A0ACB1;
+    --background-resto-secciones: #121212;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    height: 5rem;
+    background-color: var(--background-header);
+    position: fixed;
+    box-shadow: 0 0 .6rem .2rem rgba(0, 0, 0, 0.3);
+}
+
+header h1{
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: inherit;
+}
+
+header .contenedor-links{
+    display: flex;
+    gap: 2rem;
+}
+
+header .contenedor-links a{
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#inicio{
+    width: 100%;
+    background-color: var(--background-inicio);
+    height: calc(100vh + 5rem);
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    justify-content: center;
+}
+
+#inicio .inicio-informacion{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#inicio .inicio-informacion h2{
+    color: var(--text-color);
+    font-size: 2.5rem;
+}
+
+#inicio .inicio-informacion span{
+    color: var(--primary-color);
+}
+
+#inicio .inicio-informacion h3{
+    color: var(--text-color-dark);
+}
+
+#inicio .inicio-informacion p{
+    color: var(--text-color-dark);
+}
+
+#inicio .inicio-botones{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+#inicio .inicio-botones .btn-contacto{
+    display: inline-block;
+    width: 45%;
+    height: 3rem;
+    background-color: var(--primary-color);
+    border: .1rem solid var(--primary-color);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 2rem;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+#inicio .inicio-botones .btn-proyectos{
+    display: inline-block;
+    width: 45%;
+    height: 3rem;
+    background-color: transparent;
+    border: .1rem solid var(--primary-color);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 2rem;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+#inicio .inicio-imagen{
+    width: 25%;
+}
+
+#inicio .inicio-imagen img{
+    width: 100%;
+    border-radius: 2rem;
+}
+
+#sobre-mi, #proyectos, #habilidades{
+    min-height: 100vh;
+    background-color: var(--background-resto-secciones);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 1rem;
+}
+
+#sobre-mi h2, #proyectos h2, #habilidades h2{
+    padding-top: 5rem;
+    font-size: 3rem;
+    width: fit-content;
+    color: var(--text-color);
+    text-align: center;
+    border-bottom: .2rem solid var(--primary-color);
+}
+
+#sobre-mi .contenedor{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+#sobre-mi .contenedor-perfil{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#sobre-mi .contenedor-perfil p{
+    color: var(--text-color-dark);
+    text-align: justify;
+}
+
+#sobre-mi .contenedor-habilidades{
+    width: 45%;
+}
+
+#sobre-mi .contenedor-datos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    border-radius: 8px;
+    gap: 1rem;
+}
+
+#sobre-mi .contenedor-datos label{
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+#sobre-mi .contenedor-perfil .btn-descargar{
+    display: inline-block;
+    width: fit-content;
+    height: 3rem;
+    background-color: var(--primary-color);
+    border: .1rem solid var(--primary-color);
+    text-decoration: none;
+    text-align: center;
+    border-radius: 2rem;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+#sobre-mi .contenedor .contenedor-habilidades-blandas{
+    color: var(--text-color);
+}
+
+#sobre-mi .contenedor .contenedor-habilidades-blandas h3{
+    margin-bottom: 1rem;
+}
+
+#sobre-mi .contenedor .contenedor-habilidades-blandas ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    list-style: none;
+}
+
+#proyectos .contenedor-proyectos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 4rem;
+    gap: 3rem;
+}
+
+.card {
+    width: 100%;
+    background-color: var(--card-bg);
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.card img{
+    width: 100%;
+    height: 15rem;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.card .card-informacion {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card .card-informacion h3{
+    color: var(--text-color);
+}
+
+.card .card-informacion p {
+    color: var(--text-color-dark);
+    text-align: justify;
+}
+
+.card .contenedor-tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card .card-informacion span{
+    background-color: var(--toggle-ball);
+    border-radius: .3rem;
+    font-size: .8rem;
+    padding: .4rem .6rem;
+    border-radius: .7rem;
+    color: var(--text-color);
+}
+
+.card .card-informacion .contenedor-acciones{
+    display: flex;
+    gap: 1rem;
+}
+
+.card .card-informacion a{
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+
+#habilidades .contenedor-habilidades{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 4rem;
+    gap: 3rem;
+}
+
+#habilidades .contenedor-habilidades .card-habilidades{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    background-color: var(--card-bg);
+    text-align: center;
+    border-radius: 1rem;
+}
+
+#habilidades .contenedor-habilidades .card-habilidades ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    list-style: none;
+    gap: 1rem;
+}
+
+#habilidades .contenedor-habilidades .card-habilidades ul li{
+    background-color: var(--toggle-ball);
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+} 
+
+#habilidades .contenedor-habilidades .card-habilidades ul li img{
+    width: 50%;
+} 
+
+#habilidades .contenedor-habilidades .card-habilidades ul li span{
+    color: var(--text-color);
+    font-weight: bold;
+}
+
+#habilidades .contenedor-habilidades .card-habilidades h3{
+    color: var(--text-color);
+}
