@@ -19,7 +19,7 @@
 
     <header>
         <nav>
-            <h1>Mi Portafolio</h1>
+            <h1 style="display: flex; align-items: center; gap: 1rem;"><img src="logo-web.webp" alt="Logo">Mi Portafolio</h1>
             <div class="contenedor-links">
                 <a href="#inicio" title="Sección de inicio">Inicio</a>
                 <a href="#sobre-mi" title="Sección sobre mí">Sobre mi</a>
@@ -33,7 +33,7 @@
     <main>
         <div id="inicio">
             <div class="inicio-informacion">
-                <h2>Hola, soy <span>Nelson Muñoz</span></h2>
+                <h2>Hola, soy <span id="nombre"></span></h2>
                 <h3>Desarrollador Full-Stack Junior</h3>
                 <p>
                     Apasionado por el desarrollo Full-Stack, con experiencia en .NET Core, 
@@ -101,7 +101,7 @@
                         </div>
                     </div>
                     <div>
-                        <a class="btn-descargar" href="" title="Descargar CV">Descargar CV</a>
+                        <a class="btn-descargar" href="assets/documents/NelsonMuñoz.pdf" target="_blank" title="Descargar CV">Descargar CV</a>
                     </div>
                 </div>
                 <div class="contenedor-habilidades-blandas">
@@ -258,30 +258,58 @@
             </div>
         </div>
         <div id="contacto">
+            <h2>Contacto</h2>
+            <div class="contenedor">
+                <div class="contenedor-imagen">
+                    <img src="assets/icons/gmail-logo.svg" alt="Logo Gmail" title="Gmail">
+                </div>
 
+                <div class="contenedor-medios">
+                    <h3>No dudes en contactarme</h3>
+                    <p>Estoy disponible para oportunidades de trabajo freelance o empleo. Contáctame y responderé lo antes posible.</p>
+                    <div class="medio">
+                        <span>
+                            <i class="fa-solid fa-envelope"></i>
+                        </span>
+                        <p>salinitosnelson@gmail.com</p>
+                    </div>
+
+                    <div class="medio">
+                        <span>
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+                        <p>+57 3014304546</p>
+                    </div>
+
+                    <div class="medio">
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                        </span>
+                        <p>Bogotá D.C - Colombia</p>
+                    </div>
+                    <div class="social">
+                        <a href="https://github.com/Ginto11" title="Perfil Github">
+                            <i class="fa-brands fa-github"></i>
+                        </a>    
+                        <a href="https://www.linkedin.com/in/nelson-mu%C3%B1oz-320a86207/" title="Perfil de Linkedin">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a>
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a>
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
         </div>
     </main>
     
     <footer>
-
+        © 2025 Nelson Muñoz. Todos los derechos reservados.
     </footer>
-
-    <template id="template">
-        <div class="card">
-            <img class="imagen">
-            <div class="card-informacion">
-                <h3 class="titulo"></h3>
-                <p class="descripcion"></p>
-                <div class="contenedor-tecnologias">
-                    
-                </div>
-                <div class="contenedor-acciones">
-
-                </div>
-            </div>
-        </div>
-    </template>
-
     <script src="js/script.js"></script>
 </body>
 </html>

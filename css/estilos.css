@@ -15,6 +15,8 @@
     --background-inicio: #151F25;
     --text-color-dark: #A0ACB1;
     --background-resto-secciones: #121212;
+    --bg-footer: #1A1A1A;
+    user-select: none;
 }
 
 *{
@@ -56,6 +58,13 @@ header .contenedor-links a{
     color: var(--text-color);
     text-decoration: none;
     font-weight: bold;
+    transition: .5s ease-in-out all;
+    padding: .3rem .5rem;
+    border-radius: .5rem;
+}
+
+header .contenedor-links a:hover{
+    color: var(--primary-color);
 }
 
 #inicio{
@@ -143,7 +152,7 @@ header .contenedor-links a{
     border-radius: 2rem;
 }
 
-#sobre-mi, #proyectos, #habilidades{
+#sobre-mi, #proyectos, #habilidades, #contacto{
     min-height: 100vh;
     background-color: var(--background-resto-secciones);
     display: flex;
@@ -154,7 +163,7 @@ header .contenedor-links a{
     padding-bottom: 1rem;
 }
 
-#sobre-mi h2, #proyectos h2, #habilidades h2{
+#sobre-mi h2, #proyectos h2, #habilidades h2, #contacto h2{
     padding-top: 5rem;
     font-size: 3rem;
     width: fit-content;
@@ -351,4 +360,77 @@ header .contenedor-links a{
 
 #habilidades .contenedor-habilidades .card-habilidades h3{
     color: var(--text-color);
+}
+
+#contacto .contenedor{
+    display: flex;
+    color: var(--text-color);
+    gap: 5rem;
+}
+
+#contacto .contenedor p{
+    color: var(--text-color-dark);
+    font-size: 1rem;
+}
+
+#contacto .contenedor .contenedor-imagen{
+    width: 50%;
+}
+
+#contacto .contenedor .contenedor-imagen img{
+    width: 70%;
+}
+
+#contacto .contenedor .contenedor-medios{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#contacto .contenedor .contenedor-medios .medio{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#contacto .contenedor .contenedor-medios .medio p{
+    color: var(--text-color);
+}
+
+#contacto .contenedor .contenedor-medios .medio span{
+    background-color: var(--primary-color);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contacto .contenedor .contenedor-medios .social{
+    display: flex;
+    gap: 2rem;
+}
+
+#contacto .contenedor .contenedor-medios .social a{
+    background-color: var(--toggle-ball);
+    text-decoration: none;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+}
+
+footer {
+    background-color: var(--bg-footer);
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: var(--text-color-dark);
+
 }
