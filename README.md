@@ -1,6 +1,6 @@
 ![Badge en Desarollo](https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green)
 
-# 🌐 Portafolio Web Persona
+# 🌐 Portafolio
 
 Bienvenido a mi portafolio web, una muestra de mis habilidades y proyectos como desarrollador Full-Stack. Este sitio ha sido diseñado y desarrollado desde cero, utilizando tecnologías modernas y buenas prácticas de desarrollo web.
 
