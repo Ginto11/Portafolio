@@ -70,12 +70,12 @@ header .contenedor-links a:hover{
 #inicio{
     width: 100%;
     background-color: var(--background-inicio);
-    height: calc(100vh + 5rem);
+    min-height: calc(100vh + 5rem);
     display: flex;
+    flex-direction: row;
     align-items: center;
-    gap: 5rem;
     justify-content: center;
-    flex-wrap: wrap;
+    gap: 5rem;
 }
 
 #inicio .inicio-informacion{
@@ -148,6 +148,7 @@ header .contenedor-links a:hover{
 }
 
 #inicio .inicio-imagen img{
+    object-fit: contain;
     width: 100%;
     border-radius: 2rem;
 }
@@ -433,4 +434,95 @@ footer {
     font-size: 1rem;
     color: var(--text-color-dark);
 
+}
+
+@media screen and (max-width: 480px){
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header nav .contenedor-links {
+        display: none;
+    }
+
+    #inicio {
+        flex-direction: column;
+    }
+
+    #inicio .inicio-informacion {
+        width: 90%;
+        padding-top: 7rem;
+    }
+
+    #inicio .inicio-informacion h2 {
+        font-size: 1.8rem;
+    }
+
+    #inicio .inicio-informacion p {
+        text-align: justify;
+    }
+
+    #inicio .inicio-imagen {
+        width: 90%;
+    }
+
+    #sobre-mi h2 {
+        font-size: 2rem;
+    }
+
+    #sobre-mi .contenedor {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #sobre-mi .contenedor > * {
+        width: 90%;
+    }
+
+    #proyectos h2 {
+        font-size: 2rem;
+    }
+
+    #proyectos .contenedor-proyectos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    #proyectos .contenedor-proyectos > * {
+        width: 90%;
+    }
+
+    #habilidades h2 {
+        font-size: 2rem;
+    }
+
+    #habilidades .contenedor-habilidades {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contacto h2 {
+        font-size: 2rem;
+    }
+
+    #contacto .contenedor-imagen {
+        display: none;
+    }
+
+    #contacto .contenedor-medios {
+        display: flex;
+        align-items: center;
+    }
+
+    #contacto .contenedor-medios > * {
+        width: 90%;
+    }
+
+    #contacto .social {
+        display: flex;
+        justify-content: space-between;
+    }
 }
