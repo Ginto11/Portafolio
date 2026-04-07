@@ -1,6 +1,28 @@
 let texto = "Nelson Muñoz";
 let $span = document.getElementById("nombre");
 
+document.getElementById('cerrar-menu').addEventListener('click', e => {
+    document.getElementById('menu').classList.toggle('ocultar-links');
+    document.getElementById('menu').classList.toggle('contenedor-links-movil');
+})
+
+document.getElementById('button-links').addEventListener('click', e => {
+    document.getElementById('menu').classList.toggle('ocultar-links');
+    document.getElementById('menu').classList.toggle('contenedor-links-movil');
+
+    let etiquetas = [...document.querySelectorAll('#menu a')];
+
+    etiquetas.forEach(a => {
+    a.addEventListener('click', () => {
+        const menu = document.getElementById('menu');
+        menu.classList.add('ocultar-links');
+        menu.classList.remove('contenedor-links-movil');
+    });
+    });
+
+})
+
+
 
 function escritura(elemento, texto, i = 0) {
     if (i < texto.length) {
